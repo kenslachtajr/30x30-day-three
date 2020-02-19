@@ -1,1 +1,1 @@
-export * from './lib/material';
+import { MaterialModule } from './lib/material.module';

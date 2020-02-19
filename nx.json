@@ -19,6 +19,13 @@
     },
     "ui-login": {
       "tags": []
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dashboard"]
     }
   }
 }
