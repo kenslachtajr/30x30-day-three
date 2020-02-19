@@ -1,1 +1,18 @@
-<p>fruits works!</p>
+<div class="container">
+  <div class="col-50">
+    <fruits-fruits-list
+    [fruits]="fruits$ | async"
+    (selected)="selectFruit($event)"
+    (deleted)="deleteFruit($event)"
+    >
+  </fruits-fruits-list>
+  </div>
+  <div class="col-50">
+    <fruits-fruits-details
+    [fruit]="selectedFruit"
+    (saved)="saveFruit($event)"
+    (cancelled)="cancel()"
+    >
+  </fruits-fruits-details>
+  </div>
+</div>
