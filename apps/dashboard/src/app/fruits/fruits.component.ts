@@ -29,8 +29,7 @@ export class FruitsComponent implements OnInit {
   }
 
   selectFruit(fruit) {
-    console.log(fruit);
-    this.selectFruit = fruit;
+    this.selectedFruit = fruit;
   }
 
   getFruits() {
@@ -64,6 +63,7 @@ export class FruitsComponent implements OnInit {
   deleteFruit(fruit) {
     this.fruitsService.delete(fruit.id)
     .subscribe(result => this.getFruits());
+    this.resetFruits();
   }
 
   cancel() {

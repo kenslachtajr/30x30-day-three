@@ -23,7 +23,7 @@ export class FruitsService {
   }
 
   getUrlForId(id) {
-    return `${this.getUrl()}${id}`;
+    return `${this.getUrl()}/${id}`;
   }
 
   update(fruit) {
